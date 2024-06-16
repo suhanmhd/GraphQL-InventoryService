@@ -19,7 +19,8 @@ public class ProductController {
 
  @QueryMapping
     public List<Product> getProducts(){
-        return service.getProducts();
+
+     return service.getProducts();
     }
    @QueryMapping
     public List<Product> getProductsByCategory(@Argument String category) {
