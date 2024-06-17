@@ -11,6 +11,11 @@ type Query{
     getProductsByCategory(category:String):[Product]
 }
 
+type Mutation{
+    updateStock(id:ID,stock:Int):Product
+    receiveNewShipment(id:ID,stock:Int):Product
+}
+
 #
 #type Query{
 #    getProducts:[Product]
