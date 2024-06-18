@@ -35,4 +35,9 @@ public class ProductController {
     public Product receiveNewShipment(@Argument int id, @Argument int stock){
         return service.receiveNewShipment(id, stock);
     }
+
+    @MutationMapping
+    public  Product deleteProduct(@Argument int id) {
+     return service.deleteProduct(id);
+    }
 }
